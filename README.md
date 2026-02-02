@@ -1,37 +1,4 @@
-﻿<!-- 
-  ✨ COOL EFFECT LAYER ✨ 
-  This style block creates a matrix-like grid background when viewed in a Markdown editor that supports HTML styles (like Typora or VS Code).
-  It adds a subtle cyberpunk ambiance to the whole page.
--->
-<style>
-  body {
-    background-color: #0d1117;
-    color: #c9d1d9;
-  }
-  /* Animated Background Grid */
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0; 
-    left: 0; 
-    width: 200%; 
-    height: 200%;
-    background-image: 
-      linear-gradient(rgba(0, 255, 0, 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0, 255, 0, 0.05) 1px, transparent 1px);
-    background-size: 50px 50px;
-    z-index: -1;
-    transform: perspective(500px) rotateX(20deg) translateY(-100px) translateZ(-200px);
-    animation: grid-move 20s linear infinite;
-    opacity: 0.6;
-    pointer-events: none;
-  }
-  
-  @keyframes grid-move {
-    0% { transform: perspective(500px) rotateX(20deg) translateY(0) translateZ(-200px); }
-    100% { transform: perspective(500px) rotateX(20deg) translateY(50px) translateZ(-200px); }
-  }
-</style>
+﻿
 
 <div align="center">
   <img src="README.assets/matrix-dragon-header.svg" width="100%" alt="Header" />
@@ -78,7 +45,6 @@
 
 ### 💫 Tech Stack & Tools
 
-<div align="center">
 <table width="100%">
   <tr>
     <td align="center"><b>Category</b></td>
@@ -144,8 +110,7 @@
     </td>
   </tr>
 </table>
-</div>
-
+<br/>
 <br/>
 
 ### 🐍 Contribution Graph
