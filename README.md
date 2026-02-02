@@ -37,83 +37,13 @@
 -->
 
 
-### 💫 Tech Stack & Tools
-
-<table width="100%">
-<thead>
-  <tr>
-    <th width="15%" align="center">Category</th>
-    <th width="85%" align="center">Technologies</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td align="center"><b>Design</b></td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/-Illustrator-FF9A00?style=flat-square&logo=adobe%20illustrator&logoColor=white"/>
-      <img src="https://img.shields.io/badge/-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white"/>
-      <img src="https://img.shields.io/badge/-Photoshop-31A8FF?style=flat-square&logo=adobe%20photoshop&logoColor=white"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><b>Frontend</b></td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/-Vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white"/>
-      <img src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-      <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
-      <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
-      <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><b>Backend</b></td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white"/>
-      <img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-      <img src="https://img.shields.io/badge/-C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white"/>
-      <img src="https://img.shields.io/badge/-C-333333?style=flat-square&logo=c&logoColor=A8B9CC"/>
-      <img src="https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><b>AI / ML</b></td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
-      <img src="https://img.shields.io/badge/-R-276DC3?style=flat-square&logo=r&logoColor=white"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><b>DevOps</b></td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
-      <img src="https://img.shields.io/badge/-Nginx-009639?style=flat-square&logo=nginx&logoColor=white"/>
-      <img src="https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white"/>
-      <img src="https://img.shields.io/badge/-GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><b>IDE</b></td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/-Cursor-000000?style=flat-square&logo=cursor&logoColor=white"/>
-      <img src="https://img.shields.io/badge/-VS_Code-007ACC?style=flat-square&logo=visual%20studio%20code&logoColor=white"/>
-      <img src="https://img.shields.io/badge/-Vim-019733?style=flat-square&logo=vim&logoColor=white"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><b>OS</b></td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/-macOS-000000?style=flat-square&logo=apple&logoColor=white"/>
-      <img src="https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black"/>
-    </td>
-  </tr>
-</tbody>
-</table>
-
-### 🧊 3D Contributions
+### ⚛️ Neural Skill Core
 
 <div align="center">
-  <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" />
+  <img src="README.assets/skill-reactor.svg" width="100%" alt="Skill Reactor" />
 </div>
+
+<br/>
 <br/>
 <br/>
 

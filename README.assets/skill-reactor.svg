@@ -1,0 +1,196 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;family=JetBrains+Mono:wght@400&amp;display=swap');
+      
+      .reactor-text { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #a2fca2; text-anchor: middle; }
+      .core-text { font-family: 'Orbitron', sans-serif; font-size: 24px; fill: #fff; text-anchor: middle; font-weight: bold; }
+      
+      .orbit-path { fill: none; stroke: #0f0; stroke-width: 1; stroke-opacity: 0.2; }
+      
+      .skill-badge { filter: drop-shadow(0 0 5px #0f0); }
+      .skill-bg { fill: #0d1117; stroke: #0f0; stroke-width: 1; opacity: 0.8; }
+      
+      /* Core Pulse */
+      .core-glow {
+        fill: url(#core-grad);
+        animation: pulse 3s infinite ease-in-out;
+      }
+      @keyframes pulse {
+        0% { transform: scale(0.95); opacity: 0.7; }
+        50% { transform: scale(1.05); opacity: 1; }
+        100% { transform: scale(0.95); opacity: 0.7; }
+      }
+
+      /* Float Animation */
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+    </style>
+    
+    <radialGradient id="core-grad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#fff;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#0f0;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#003300;stop-opacity:0" />
+    </radialGradient>
+    
+    <filter id="glow-filter" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Central Core -->
+  <g transform="translate(400, 200)">
+    <circle r="40" class="core-glow" />
+    <circle r="35" fill="#000" opacity="0.6" />
+    <text y="5" class="core-text" style="filter: url(#glow-filter);">TECH</text>
+    <text y="25" class="core-text" style="font-size: 10px; fill: #0f0;">KERNEL</text>
+    
+    <!-- Rotating Rings (Visual only) -->
+    <ellipse cx="0" cy="0" rx="140" ry="40" fill="none" stroke="#0f0" stroke-width="2" stroke-opacity="0.2">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="0" cy="0" rx="140" ry="40" fill="none" stroke="#33ccff" stroke-width="2" stroke-opacity="0.2">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="25s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="0" cy="0" rx="180" ry="180" fill="none" stroke="#cc33ff" stroke-width="1" stroke-dasharray="10 10" stroke-opacity="0.1">
+       <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="60s" repeatCount="indefinite" />
+    </ellipse>
+  </g>
+
+  <!-- Orbits & Skills -->
+  
+  <!-- Orbit 1: Backend (Elliptical) -->
+  <g transform="translate(400, 200)">
+    <!-- Path Visualization -->
+    <path d="M -250,0 A 250,80 0 1,1 250,0 A 250,80 0 1,1 -250,0" class="orbit-path" transform="rotate(-15)" />
+    
+    <!-- Skills on Path -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="15s" repeatCount="indefinite" />
+      <!-- We use circles that counter-rotate to stay upright? No, simpler to just orbit dots -->
+      <!-- Let's actually use animateMotion for better placement -->
+    </g>
+    
+    <!-- Skill: Go -->
+    <g>
+      <animateMotion dur="12s" repeatCount="indefinite" path="M -250,0 A 250,80 0 1,1 250,0 A 250,80 0 1,1 -250,0" rotate="auto" keyPoints="0;1" keyTimes="0;1" />
+      <g transform="rotate(15)"> <!-- Correct for orbit tilt -->
+         <!-- Counter-rotate to keep text upright not perfectly possible with simple SVG without complex JS. 
+              Instead, let's make the "Electron" look good at any angle -->
+         <circle r="15" fill="#000" stroke="#00ADD8" stroke-width="2" />
+         <text y="4" font-family="Arial" font-size="10" font-weight="bold" fill="#00ADD8" text-anchor="middle">Go</text>
+      </g>
+    </g>
+    
+     <!-- Skill: Python -->
+    <g>
+      <animateMotion dur="12s" begin="-4s" repeatCount="indefinite" path="M -250,0 A 250,80 0 1,1 250,0 A 250,80 0 1,1 -250,0" rotate="auto" />
+      <g transform="rotate(15)">
+         <circle r="15" fill="#000" stroke="#3776AB" stroke-width="2" />
+         <text y="4" font-family="Arial" font-size="8" font-weight="bold" fill="#3776AB" text-anchor="middle">Py</text>
+      </g>
+    </g>
+    
+    <!-- Skill: C++ -->
+    <g>
+      <animateMotion dur="12s" begin="-8s" repeatCount="indefinite" path="M -250,0 A 250,80 0 1,1 250,0 A 250,80 0 1,1 -250,0" rotate="auto" />
+      <g transform="rotate(15)">
+         <circle r="15" fill="#000" stroke="#00599C" stroke-width="2" />
+         <text y="4" font-family="Arial" font-size="8" font-weight="bold" fill="#00599C" text-anchor="middle">C++</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Orbit 2: Frontend (Opposite Tilt) -->
+  <g transform="translate(400, 200) rotate(30)">
+    <path d="M -200,0 A 200,60 0 1,0 200,0 A 200,60 0 1,0 -200,0" class="orbit-path" />
+    
+    <!-- Skill: Vue -->
+    <g>
+      <animateMotion dur="9s" repeatCount="indefinite" path="M -200,0 A 200,60 0 1,0 200,0 A 200,60 0 1,0 -200,0" rotate="auto" />
+      <g transform="rotate(-30)"> 
+         <circle r="14" fill="#000" stroke="#4FC08D" stroke-width="2" />
+         <text y="4" font-family="Arial" font-size="8" font-weight="bold" fill="#4FC08D" text-anchor="middle">Vue</text>
+      </g>
+    </g>
+    
+    <!-- Skill: React -->
+    <g>
+      <animateMotion dur="9s" begin="-3s" repeatCount="indefinite" path="M -200,0 A 200,60 0 1,0 200,0 A 200,60 0 1,0 -200,0" rotate="auto" />
+      <g transform="rotate(-30)"> 
+         <circle r="14" fill="#000" stroke="#61DAFB" stroke-width="2" />
+         <text y="4" font-family="Arial" font-size="8" font-weight="bold" fill="#61DAFB" text-anchor="middle">Rct</text>
+      </g>
+    </g>
+    
+     <!-- Skill: TS -->
+    <g>
+      <animateMotion dur="9s" begin="-6s" repeatCount="indefinite" path="M -200,0 A 200,60 0 1,0 200,0 A 200,60 0 1,0 -200,0" rotate="auto" />
+      <g transform="rotate(-30)"> 
+         <circle r="14" fill="#000" stroke="#3178C6" stroke-width="2" />
+         <text y="4" font-family="Arial" font-size="8" font-weight="bold" fill="#3178C6" text-anchor="middle">TS</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Orbit 3: DevOps (Verticalish) -->
+  <g transform="translate(400, 200) rotate(90)">
+    <path d="M -100,0 A 100,200 0 1,1 100,0 A 100,200 0 1,1 -100,0" class="orbit-path" opacity="0.1" />
+    
+    <!-- Skill: Docker -->
+    <g>
+      <animateMotion dur="18s" repeatCount="indefinite" path="M -100,0 A 100,200 0 1,1 100,0 A 100,200 0 1,1 -100,0" rotate="auto" />
+      <g transform="rotate(-90)">
+         <rect x="-16" y="-8" width="32" height="16" rx="4" fill="#000" stroke="#2496ED" stroke-width="1.5" />
+         <text x="0" y="4" font-family="Arial" font-size="8" fill="#2496ED" text-anchor="middle">Docker</text>
+      </g>
+    </g>
+    
+     <!-- Skill: Linux -->
+    <g>
+      <animateMotion dur="18s" begin="-9s" repeatCount="indefinite" path="M -100,0 A 100,200 0 1,1 100,0 A 100,200 0 1,1 -100,0" rotate="auto" />
+      <g transform="rotate(-90)">
+         <rect x="-16" y="-8" width="32" height="16" rx="4" fill="#000" stroke="#FCC624" stroke-width="1.5" />
+         <text x="0" y="4" font-family="Arial" font-size="8" fill="#FCC624" text-anchor="middle">Linux</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Floating Stats -->
+  <g class="reactor-text" transform="translate(680, 50)">
+    <text x="0" y="0" font-size="10" fill="#0f0" opacity="0.6">SYSTEM STATUS</text>
+    <rect x="-40" y="10" width="80" height="2" fill="#0f0" opacity="0.4" />
+    <text x="0" y="30" font-size="16" fill="#fff">ONLINE</text>
+    
+    <g transform="translate(0, 50)">
+       <text x="0" y="0" font-size="10" fill="#0f0" opacity="0.6">UPTIME</text>
+       <text x="0" y="15" font-size="12" fill="#fff">99.9%</text>
+    </g>
+    
+     <g transform="translate(0, 100)">
+       <text x="0" y="0" font-size="10" fill="#0f0" opacity="0.6">PROJECTS</text>
+       <text x="0" y="15" font-size="12" fill="#fff">30+</text>
+    </g>
+  </g>
+
+  <!-- Left Side Data -->
+  <g class="reactor-text" transform="translate(120, 50)">
+    <text x="0" y="0" font-size="10" fill="#0f0" opacity="0.6">CORE MODULES</text>
+    <rect x="-40" y="10" width="80" height="2" fill="#0f0" opacity="0.4" />
+    
+    <g transform="translate(-30, 30)" text-anchor="start">
+      <text y="0" font-size="10" fill="#00ADD8">> Golang</text>
+      <text y="15" font-size="10" fill="#3776AB">> Python</text>
+      <text y="30" font-size="10" fill="#EE4C2C">> PyTorch</text>
+      <text y="45" font-size="10" fill="#4FC08D">> Vue.js</text>
+      <text y="60" font-size="10" fill="#2496ED">> Docker</text>
+    </g>
+  </g>
+
+</svg>
