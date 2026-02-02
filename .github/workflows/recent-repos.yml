@@ -2,25 +2,84 @@ name: Update Recent Repos
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 每天运行一次
-  workflow_dispatch:
+    - cron: '0 0 * * *' # Run daily
+  workflow_dispatch: # Allow manual trigger
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
-      - uses: Readme-Workflows/recent-repos-workflow@v1.4.2
+      
+      - name: Update README with Recent Repos
+        uses: actions/github-script@v6
         with:
-          # The Personal Access Token to access the GitHub API
-          # This token needs to have the `repo` scope
-          # (or `public_repo` if you only want to access public repositories)
-          #
-          # Required
-          access_token: ${{ secrets.GITHUB_TOKEN }}
-          
-          # The Username to fetch the repositories from
-          #
-          # Optional
-          # Default: The username of the owner of the repository
-          # username: <your_username>
+          script: |
+            const query = `query($login:String!) {
+              user(login: $login) {
+                repositories(first: 5, orderBy: {field: PUSHED_AT, direction: DESC}, ownerAffiliations: OWNER, privacy: PUBLIC) {
+                  nodes {
+                    name
+                    description
+                    url
+                    primaryLanguage {
+                      name
+                    }
+                  }
+                }
+              }
+            }`;
+            
+            const variables = { login: context.repo.owner };
+            
+            const result = await github.graphql(query, variables);
+            const repos = result.user.repositories.nodes;
+            
+            let md = "";
+            for (const repo of repos) {
+              const lang = repo.primaryLanguage ? `\`${repo.primaryLanguage.name}\`` : "";
+              const desc = repo.description ? repo.description : "";
+              // Format: - [**Name**](Url) - `Language` <br> Description
+              
+              let line = `- [**${repo.name}**](${repo.url})`;
+              if (lang) line += ` - ${lang}`;
+              if (desc) line += `<br> ${desc}`;
+              md += line + "\n";
+            }
+            
+            const fs = require('fs');
+            const readmePath = 'README.md';
+            let readme = fs.readFileSync(readmePath, 'utf8');
+            
+            const startMarker = '<!-- RECENT_REPOS_START -->';
+            const endMarker = '<!-- RECENT_REPOS_END -->';
+            
+            const startIdx = readme.indexOf(startMarker);
+            const endIdx = readme.indexOf(endMarker);
+            
+            if (startIdx !== -1 && endIdx !== -1) {
+              const newReadme = readme.substring(0, startIdx + startMarker.length) + "\n\n" + md + "\n" + readme.substring(endIdx);
+              if (newReadme !== readme) {
+                fs.writeFileSync(readmePath, newReadme);
+                console.log("README updated locally.");
+              } else {
+                console.log("No changes detected.");
+              }
+            } else {
+              console.log("Markers not found in README.md");
+            }
+
+      - name: Commit and Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add README.md
+          # Only commit if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update recent repos list"
+            git push
+          fi
