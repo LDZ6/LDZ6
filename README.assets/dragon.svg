@@ -1,0 +1,67 @@
+<svg width="100%" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="pixelPattern" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="#2ecc71" />
+    </pattern>
+    
+    <!-- Dragon Body (Common) -->
+    <g id="dragon-body">
+       <!-- Head -->
+       <rect x="40" y="8" width="16" height="16" fill="#2ecc71" />
+       <!-- Snout -->
+       <rect x="56" y="12" width="4" height="8" fill="#2ecc71" />
+       <!-- Eye -->
+       <rect x="44" y="12" width="4" height="4" fill="#ffffff" />
+       <rect x="46" y="14" width="2" height="2" fill="#000000" />
+       <!-- Body -->
+       <rect x="8" y="16" width="32" height="12" fill="#2ecc71" />
+       <!-- Scale Detail -->
+       <rect x="16" y="16" width="4" height="4" fill="#27ae60" />
+       <rect x="24" y="20" width="4" height="4" fill="#27ae60" />
+       <!-- Tail -->
+       <rect x="0" y="12" width="8" height="8" fill="#2ecc71" />
+       <!-- Legs -->
+       <rect x="12" y="28" width="8" height="4" fill="#2ecc71" />
+       <rect x="28" y="28" width="8" height="4" fill="#2ecc71" />
+    </g>
+
+    <!-- Wing Frame 1 (Up) -->
+    <g id="dragon-frame-1">
+      <use href="#dragon-body" />
+      <!-- Wing Up -->
+      <rect x="16" y="4" width="16" height="8" fill="#2ecc71" />
+      <rect x="12" y="0" width="4" height="4" fill="#2ecc71" />
+      <rect x="32" y="0" width="4" height="4" fill="#2ecc71" />
+    </g>
+
+    <!-- Wing Frame 2 (Down) -->
+    <g id="dragon-frame-2">
+      <use href="#dragon-body" />
+      <!-- Wing Down -->
+      <rect x="16" y="20" width="16" height="8" fill="#2ecc71" />
+      <rect x="12" y="24" width="4" height="4" fill="#2ecc71" />
+      <rect x="32" y="24" width="4" height="4" fill="#2ecc71" />
+    </g>
+  </defs>
+
+  <!-- Animated Dragon -->
+  <g>
+    <!-- Motion Path: Figure 8 / Wave -->
+    <animateMotion 
+      dur="10s" 
+      repeatCount="indefinite"
+      path="M-100,100 C 100,0 300,200 500,100 S 900,0 1100,100" />
+
+    <!-- Flapping Animation: Switch visibility -->
+    <g transform="scale(2)">
+        <g>
+            <use href="#dragon-frame-1" />
+            <animate attributeName="display" values="inline;none" dur="0.4s" calcMode="discrete" repeatCount="indefinite" />
+        </g>
+        <g display="none">
+            <use href="#dragon-frame-2" />
+            <animate attributeName="display" values="none;inline" dur="0.4s" calcMode="discrete" repeatCount="indefinite" />
+        </g>
+    </g>
+  </g>
+</svg>

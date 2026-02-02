@@ -20,6 +20,10 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
+      - name: Change Font to Times New Roman
+        run: |
+          sed -i 's/sans-serif/Times New Roman, serif/g' dist/*.svg
+
       - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output

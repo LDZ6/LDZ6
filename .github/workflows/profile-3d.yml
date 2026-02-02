@@ -15,6 +15,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+      - name: Change Font to Times New Roman
+        run: |
+          sed -i 's/\* { font-family: "Ubuntu", "Helvetica", "Arial", sans-serif; }/text { font-family: "Times New Roman", serif; font-weight: bold; fill: #ffffff; }/g' profile-3d-contrib/*.svg
       - name: Commit & Push
         run: |
           git config user.name github-actions

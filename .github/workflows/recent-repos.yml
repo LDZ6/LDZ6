@@ -37,15 +37,15 @@ jobs:
             const result = await github.graphql(query, variables);
             const repos = result.user.repositories.nodes;
             
-            let md = "| Project | Language | Description |\n| :--- | :---: | :--- |\n";
+            let md = '<table width="100%">\n<thead>\n<tr>\n<th>Project</th>\n<th align="center">Language</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n';
             for (const repo of repos) {
               if (repo.name === 'LDZ6') continue;
               const lang = repo.primaryLanguage ? `\`${repo.primaryLanguage.name}\`` : "—";
               const desc = repo.description ? repo.description : "No description provided.";
               
-              // Format: | [**Name**](Url) | `Language` | Description |
-              md += `| [**${repo.name}**](${repo.url}) | ${lang} | ${desc} |\n`;
+              md += `<tr>\n<td><a href="${repo.url}"><b>${repo.name}</b></a></td>\n<td align="center">${lang}</td>\n<td>${desc}</td>\n</tr>\n`;
             }
+            md += '</tbody>\n</table>';
             
             const fs = require('fs');
             const readmePath = 'README.md';

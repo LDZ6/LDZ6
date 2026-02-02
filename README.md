@@ -1,17 +1,43 @@
-﻿<div align="center">
-
-![][banner]
+﻿<!-- 
+  ✨ COOL EFFECT LAYER ✨ 
+  This style block creates a matrix-like grid background when viewed in a Markdown editor that supports HTML styles (like Typora or VS Code).
+  It adds a subtle cyberpunk ambiance to the whole page.
+-->
+<style>
+  body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+  }
+  /* Animated Background Grid */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 200%; 
+    height: 200%;
+    background-image: 
+      linear-gradient(rgba(0, 255, 0, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 255, 0, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: -1;
+    transform: perspective(500px) rotateX(20deg) translateY(-100px) translateZ(-200px);
+    animation: grid-move 20s linear infinite;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  
+  @keyframes grid-move {
+    0% { transform: perspective(500px) rotateX(20deg) translateY(0) translateZ(-200px); }
+    100% { transform: perspective(500px) rotateX(20deg) translateY(50px) translateZ(-200px); }
+  }
+</style>
 
 <div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=33CCFF&center=true&vCenter=true&width=600&lines=Hi+there,+I'm+Lazard!+%F0%9F%91%8B;Passionate+about+AI+%26+Web+Dev;%E5%BF%97%E4%B9%8B%E6%89%80%E8%B6%8B%EF%BC%8C%E6%97%A0%E8%BF%9C%E5%BC%97%E5%B1%8A;%F0%9F%8C%9F+Code+is+Art" alt="Typing SVG" />
-  </a>
+  <img src="README.assets/matrix-dragon-header.svg" width="100%" alt="Header" />
 </div>
 
-<p align="center">
-  <b>A curious developer passionate about Artificial Intelligence & Web Development.</b><br/>
-  Master's student @ <a href="https://www.ucas.ac.cn">University of Chinese Academy of Sciences</a>
-</p>
+<div align="center">
 
 <div align="center">
 
@@ -52,9 +78,10 @@
 
 ### 💫 Tech Stack & Tools
 
+<div align="center">
 <table width="100%">
   <tr>
-    <td align="center" width="15%"><b>Category</b></td>
+    <td align="center"><b>Category</b></td>
     <td align="center"><b>Technologies</b></td>
   </tr>
   <tr>
@@ -117,6 +144,7 @@
     </td>
   </tr>
 </table>
+</div>
 
 <br/>
 
@@ -134,17 +162,62 @@
 
 <!-- RECENT_REPOS_START -->
 
-| Project | Language | Description |
-| :--- | :---: | :--- |
-| [**javanote**](https://github.com/LDZ6/javanote) | — | myJavaNote |
-| [**GOTCC**](https://github.com/LDZ6/GOTCC) | `Go` | Pure Go implementation of the Try-Confirm-Cancel pattern for distributed transaction coordination |
-| [**IAM**](https://github.com/LDZ6/IAM) | `Go` | A production-ready, enterprise-grade Identity and Access Management system built with Go, featuring comprehensive authentication, authorization, and policy management capabilities. |
-| [**gopractice_demo**](https://github.com/LDZ6/gopractice_demo) | `Go` | A comprehensive Go language practice repository featuring examples and best practices for popular frameworks, tools, and design patterns including Gin, gRPC, Cobra, GORM, various logging libraries, testing frameworks, and distributed systems components. |
-| [**ACM_ICPC_preparation**](https://github.com/LDZ6/ACM_ICPC_preparation) | — | ACM Competition Preparation Notes |
-| [**deepLearning**](https://github.com/LDZ6/deepLearning) | `Python` | My Deep Learning Notes |
-| [**SendsPlatfrom**](https://github.com/LDZ6/SendsPlatfrom) | `Go` | A modular microservices-based backend system for a WeChat campus assistant, enabling academic queries, festive games, financial reports, and user authentication with high concurrency and secure data handling. |
-| [**MIT-6.824**](https://github.com/LDZ6/MIT-6.824) | `Go` | 麻省理工研究生课程项目：基于提供的Go语言代码框架，复刻论文细节，实现完整、容错、 分片的分布式存储系统，并通过含不可靠网络、服务器崩溃、客户端重启及RPC次数限制的全部测试样例 |
-| [**go-dev-notes**](https://github.com/LDZ6/go-dev-notes) | `HTML` | Personal Go development notes and code snippets. Covers core syntax, standard libraries, best practices, and real-world examples. |
+<table width="100%">
+<thead>
+<tr>
+<th>Project</th>
+<th align="center">Language</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/LDZ6/javanote"><b>javanote</b></a></td>
+<td align="center">—</td>
+<td>myJavaNote</td>
+</tr>
+<tr>
+<td><a href="https://github.com/LDZ6/GOTCC"><b>GOTCC</b></a></td>
+<td align="center">`Go`</td>
+<td>Pure Go implementation of the Try-Confirm-Cancel pattern for distributed transaction coordination</td>
+</tr>
+<tr>
+<td><a href="https://github.com/LDZ6/IAM"><b>IAM</b></a></td>
+<td align="center">`Go`</td>
+<td>A production-ready, enterprise-grade Identity and Access Management system built with Go, featuring comprehensive authentication, authorization, and policy management capabilities.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/LDZ6/gopractice_demo"><b>gopractice_demo</b></a></td>
+<td align="center">`Go`</td>
+<td>A comprehensive Go language practice repository featuring examples and best practices for popular frameworks, tools, and design patterns including Gin, gRPC, Cobra, GORM, various logging libraries, testing frameworks, and distributed systems components.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/LDZ6/ACM_ICPC_preparation"><b>ACM_ICPC_preparation</b></a></td>
+<td align="center">—</td>
+<td>ACM Competition Preparation Notes</td>
+</tr>
+<tr>
+<td><a href="https://github.com/LDZ6/deepLearning"><b>deepLearning</b></a></td>
+<td align="center">`Python`</td>
+<td>My Deep Learning Notes</td>
+</tr>
+<tr>
+<td><a href="https://github.com/LDZ6/SendsPlatfrom"><b>SendsPlatfrom</b></a></td>
+<td align="center">`Go`</td>
+<td>A modular microservices-based backend system for a WeChat campus assistant, enabling academic queries, festive games, financial reports, and user authentication with high concurrency and secure data handling.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/LDZ6/MIT-6.824"><b>MIT-6.824</b></a></td>
+<td align="center">`Go`</td>
+<td>麻省理工研究生课程项目：基于提供的Go语言代码框架，复刻论文细节，实现完整、容错、 分片的分布式存储系统，并通过含不可靠网络、服务器崩溃、客户端重启及RPC次数限制的全部测试样例</td>
+</tr>
+<tr>
+<td><a href="https://github.com/LDZ6/go-dev-notes"><b>go-dev-notes</b></a></td>
+<td align="center">`HTML`</td>
+<td>Personal Go development notes and code snippets. Covers core syntax, standard libraries, best practices, and real-world examples.</td>
+</tr>
+</tbody>
+</table>
 
 <!-- RECENT_REPOS_END -->
 
@@ -191,3 +264,7 @@ You can checkout my blog [**here**](https://Lazard.ink).
 [social-xiaohongshu-link]: https://www.xiaohongshu.com/user/profile/68c190c9000000001a0251cd?xsec_token=ABLMxymspjGMX5YRRo5hbsgAl4L0-IljyOqR6usp04UOs%3D&xsec_source=pc_search
 [social-xiaohongshu-shield]: https://img.shields.io/badge/Xiaohongshu-FF2442?style=flat-square&logo=xiaohongshu&logoColor=white
 [split]: https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png
+
+<div align="center">
+  <img src="README.assets/matrix-footer.svg" width="100%" alt="Footer" />
+</div>
