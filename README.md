@@ -71,6 +71,13 @@
 ### 📚 Recent Projects
 
 <!-- RECENT_REPOS_START -->
+
+- [**LDZ6**](https://github.com/LDZ6/LDZ6)<br> 我的个人主页
+- [**javanote**](https://github.com/LDZ6/javanote)<br> myJavaNote
+- [**GOTCC**](https://github.com/LDZ6/GOTCC) - `Go`<br> Pure Go implementation of the Try-Confirm-Cancel pattern for distributed transaction coordination
+- [**IAM**](https://github.com/LDZ6/IAM) - `Go`<br> A production-ready, enterprise-grade Identity and Access Management system built with Go, featuring comprehensive authentication, authorization, and policy management capabilities.
+- [**gopractice_demo**](https://github.com/LDZ6/gopractice_demo) - `Go`<br> A comprehensive Go language practice repository featuring examples and best practices for popular frameworks, tools, and design patterns including Gin, gRPC, Cobra, GORM, various logging libraries, testing frameworks, and distributed systems components.
+
 <!-- RECENT_REPOS_END -->
 
 ### ⭐️ Blogs & Connections
