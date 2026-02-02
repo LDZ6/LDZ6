@@ -37,12 +37,6 @@
 -->
 
 
-### 🧊 3D Contributions
-
-<div align="center">
-  <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" />
-</div>
-
 ### 💫 Tech Stack & Tools
 
 <table width="100%">
@@ -110,6 +104,12 @@
     </td>
   </tr>
 </table>
+
+### 🧊 3D Contributions
+
+<div align="center">
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" />
+</div>
 <br/>
 <br/>
 
