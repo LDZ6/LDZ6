@@ -40,10 +40,13 @@
 ### 💫 Tech Stack & Tools
 
 <table width="100%">
+<thead>
   <tr>
-    <td align="center"><b>Category</b></td>
-    <td align="center"><b>Technologies</b></td>
+    <th width="15%" align="center">Category</th>
+    <th width="85%" align="center">Technologies</th>
   </tr>
+</thead>
+<tbody>
   <tr>
     <td align="center"><b>Design</b></td>
     <td align="center">
@@ -103,6 +106,7 @@
       <img src="https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black"/>
     </td>
   </tr>
+</tbody>
 </table>
 
 ### 🧊 3D Contributions
