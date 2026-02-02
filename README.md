@@ -2,79 +2,121 @@
 
 ![][banner]
 
-<h1 align="center"><img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50px" style="max-width: 100%;"> Hi there, I'm Lazard</h1>
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=33CCFF&center=true&vCenter=true&width=600&lines=Hi+there,+I'm+Lazard!+%F0%9F%91%8B;Passionate+about+AI+%26+Web+Dev;%E5%BF%97%E4%B9%8B%E6%89%80%E8%B6%8B%EF%BC%8C%E6%97%A0%E8%BF%9C%E5%BC%97%E5%B1%8A;%F0%9F%8C%9F+Code+is+Art" alt="Typing SVG" />
+  </a>
+</div>
 
-A curious developer passionate about Artificial Intelligence & Web Development.
+<p align="center">
+  <b>A curious developer passionate about Artificial Intelligence & Web Development.</b><br/>
+  Master's student @ <a href="https://www.ucas.ac.cn">University of Chinese Academy of Sciences</a>
+</p>
 
-I am a master's student @ [University of Chinese Academy of Sciences](https://www.ucas.ac.cn).
+<div align="center">
 
 [![][social-bilibili-shield]][social-bilibili-link]
 [![][social-wechat-shield]][social-wechat-link]
 [![][social-email-shield]][social-email-link]
+![Visitor Count](https://komarev.com/ghpvc/?username=LDZ6&style=flat-square&color=blue)
+
+</div>
 
 ![][split]
 
+<!--
+### 🏆 Achievement Collection
+
+<div align="center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=LDZ6&theme=radical&no-frame=true&margin-w=15" alt="LDZ6's trophies" />
+  </a>
+</div>
+
+### 📊 GitHub Analytics
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=LDZ6&show_icons=true&theme=tokyonight&count_private=true&hide_border=true" height="180" alt="stats graph" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LDZ6&layout=compact&theme=tokyonight&hide_border=true" height="180" alt="languages graph" />
 </div>
 
 <div align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&pause=1000&color=06B6D4&center=true&vCenter=true&width=500&lines=%E2%9C%A8+%E5%BF%97%E4%B9%8B%E6%89%80%E8%B6%8B%EF%BC%8C%E6%97%A0%E8%BF%9C%E5%BC%97%E5%B1%8A;%F0%9F%8C%9F+%E2%84%82%F0%9D%95%99%F0%9D%95%92%F0%9D%95%A4%F0%9D%95%9A%F0%9D%95%9F%F0%9D%95%98+%F0%9D%95%92+%F0%9D%95%9D%F0%9D%95%9A%F0%9D%95%98%F0%9D%95%99%F0%9D%95%A5+%F0%9D%95%93%F0%9D%95%96%F0%9D%95%AA%F0%9D%95%A0%F0%9D%95%9F%F0%9D%95%95+%F0%9D%95%A3%F0%9D%95%96%F0%9D%95%92%F0%9D%95%94%F0%9D%95%99" alt="Typing SVG" /></a>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=LDZ6&theme=tokyonight&hide_border=true" alt="streak graph" />
+</div>
+-->
+
+### 🗺️ 3D Contributions
+
+<div align="center">
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" />
 </div>
 
-### 💫 Tech Stack and Tools
+### 💫 Tech Stack & Tools
 
-| Domain           | Skills                                                                |
-| :--------------- | :------------------------------------------------------------------------------------------------------------- |
-| Design           | ![][design-figma] ![][design-ps] ![][design-ai]|
-| Frontend         | ![][frontend-vue] ![][frontend-react] ![][frontend-js] ![][frontend-css]  ![][frontend-ts] |
-| Backend          | ![][backend-python] ![][backend-nodejs] ![][backend-cpp] ![][backend-c] ![][backend-mysql]     |
-| Machine Learning | ![][ml-pytorch] ![][ml-r]                                                                                      |
-| DevOps           | ![][ops-docker] ![][ops-nginx] ![][ops-vercel] ![][ops-github-action]                                                                            |
-| IDE              | ![][ide-cursor] ![][ide-vscode] ![][ide-vim]                                                                    |
-| OS               | ![][os-macos] ![][os-linux]                                                                           |
-| Other            | ![][other-markdown]                                                                                            |
+| **Category** | **Technologies** |
+| :----------- | :--------------- |
+| **Design** | ![][design-figma] ![][design-ps] ![][design-ai] |
+| **Frontend** | ![][frontend-vue] ![][frontend-react] ![][frontend-js] ![][frontend-css] ![][frontend-ts] |
+| **Backend** | ![][backend-python] ![][backend-nodejs] ![][backend-cpp] ![][backend-c] ![][backend-mysql] |
+| **AI / ML** | ![][ml-pytorch] ![][ml-r] |
+| **DevOps** | ![][ops-docker] ![][ops-nginx] ![][ops-vercel] ![][ops-github-action] |
+| **IDE** | ![][ide-cursor] ![][ide-vscode] ![][ide-vim] |
+| **OS** | ![][os-macos] ![][os-linux] |
 
-### ⭐️ Blogs & Contributions
+<br/>
 
-You can checkout my blog [here](https://Lazard.ink).
+### 🐍 Contribution Graph
 
-> [!NOTE]
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LDZ6/LDZ6/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LDZ6/LDZ6/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/LDZ6/LDZ6/output/github-contribution-grid-snake.svg">
+</picture>
+
+<br/>
+
+### ⭐️ Blogs & Connections
+
+You can checkout my blog [**here**](https://Lazard.ink).
+
+> [!TIP]
 > Feel free to explore my articles and projects, and connect with me on GitHub!
-Hit me up anytime and let's explore new ideas together! 😺✨
+> Hit me up anytime and let's explore new ideas together! 😺✨
 
+</div>
 
 <!-- SHIELD GROUP -->
-
 [banner]: ./README.assets/banner.webp
 [signature]: ./README.assets/signature.svg
-[backend-c]: https://img.shields.io/badge/-C-000?style=flat-square&logoColor=white&logo=c
-[backend-cpp]: https://img.shields.io/badge/-C%2B%2B-000?style=flat-square&logoColor=white&logo=cplusplus
-[backend-mysql]: https://img.shields.io/badge/-MySQL-000?style=flat-square&logoColor=white&logo=mysql
-[backend-nodejs]: https://img.shields.io/badge/-Node.js-000?style=flat-square&logoColor=white&logo=nodedotjs
-[backend-python]: https://img.shields.io/badge/-Python-000?style=flat-square&logoColor=white&logo=python
-[design-ai]: https://img.shields.io/badge/-Illustrator-000?style=flat-square&logoColor=white&logo=adobeillustrator
-[design-figma]: https://img.shields.io/badge/-Figma-000?style=flat-square&logoColor=white&logo=figma
-[design-ps]: https://img.shields.io/badge/-Photoshop-000?style=flat-square&logoColor=white&logo=adobephotoshop
-[frontend-css]: https://img.shields.io/badge/-CSS3-000?style=flat-square&logoColor=white&logo=css
-[frontend-js]: https://img.shields.io/badge/-JavaScript-000?style=flat-square&logoColor=white&logo=javascript
-[frontend-react]: https://img.shields.io/badge/-React-000?style=flat-square&logoColor=white&logo=react
-[frontend-ts]: https://img.shields.io/badge/-TypeScript-000?style=flat-square&logoColor=white&logo=typescript
-[frontend-vue]: https://img.shields.io/badge/-Vue.js-000?style=flat-square&logoColor=white&logo=vuedotjs
-[ide-cursor]: https://img.shields.io/badge/-Cursor-000?style=flat-square&logoColor=white&logo=cursor
-[ide-vim]: https://img.shields.io/badge/-Vim-000?style=flat-square&logoColor=white&logo=vim
-[ide-vscode]: https://img.shields.io/badge/-VS_Code-000?style=flat-square&logoColor=white&logo=visualstudiocode
-[ml-pytorch]: https://img.shields.io/badge/-PyTorch-000?style=flat-square&logoColor=white&logo=pytorch
-[ml-r]: https://img.shields.io/badge/-R-000?style=flat-square&logoColor=white&logo=r
-[ops-docker]: https://img.shields.io/badge/-Docker-000?style=flat-square&logoColor=white&logo=docker
-[ops-nginx]: https://img.shields.io/badge/-Nginx-000?style=flat-square&logoColor=white&logo=nginx
-[ops-vercel]: https://img.shields.io/badge/-Vercel-000?style=flat-square&logoColor=white&logo=vercel
-[ops-github-action]: https://img.shields.io/badge/-GitHub_Actions-000?style=flat-square&logoColor=white&logo=githubactions
-[os-macos]: https://img.shields.io/badge/-macOS-000?style=flat-square&logoColor=white&logo=apple
-[os-linux]: https://img.shields.io/badge/-Linux-000?style=flat-square&logoColor=white&logo=linux
-[other-markdown]: https://img.shields.io/badge/-Markdown-000?style=flat-square&logoColor=white&logo=markdown
+[backend-c]: https://img.shields.io/badge/-C-333333?style=flat-square&logo=c&logoColor=A8B9CC
+[backend-cpp]: https://img.shields.io/badge/-C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white
+[backend-mysql]: https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white
+[backend-go]: https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white
+[backend-python]: https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white
+[design-ai]: https://img.shields.io/badge/-Illustrator-FF9A00?style=flat-square&logo=adobe%20illustrator&logoColor=white
+[design-figma]: https://img.shields.io/badge/-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white
+[design-ps]: https://img.shields.io/badge/-Photoshop-31A8FF?style=flat-square&logo=adobe%20photoshop&logoColor=white
+[frontend-css]: https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white
+[frontend-js]: https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black
+[frontend-react]: https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black
+[frontend-ts]: https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white
+[frontend-vue]: https://img.shields.io/badge/-Vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white
+[ide-cursor]: https://img.shields.io/badge/-Cursor-000000?style=flat-square&logo=cursor&logoColor=white
+[ide-vim]: https://img.shields.io/badge/-Vim-019733?style=flat-square&logo=vim&logoColor=white
+[ide-vscode]: https://img.shields.io/badge/-VS_Code-007ACC?style=flat-square&logo=visual%20studio%20code&logoColor=white
+[ml-pytorch]: https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white
+[ml-r]: https://img.shields.io/badge/-R-276DC3?style=flat-square&logo=r&logoColor=white
+[ops-docker]: https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white
+[ops-nginx]: https://img.shields.io/badge/-Nginx-009639?style=flat-square&logo=nginx&logoColor=white
+[ops-vercel]: https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white
+[ops-github-action]: https://img.shields.io/badge/-GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white
+[os-macos]: https://img.shields.io/badge/-macOS-000000?style=flat-square&logo=apple&logoColor=white
+[os-linux]: https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black
+[other-markdown]: https://img.shields.io/badge/-Markdown-000000?style=flat-square&logo=markdown&logoColor=white
 [social-bilibili-link]: #
-[social-bilibili-shield]: https://img.shields.io/badge/-Bilibili-black?labelColor=black&logo=bilibili&logoColor=white&style=flat-square
+[social-bilibili-shield]: https://img.shields.io/badge/Bilibili-FB7299?style=flat-square&logo=bilibili&logoColor=white
 [social-wechat-link]: #
-[social-wechat-shield]: https://img.shields.io/badge/-Lazard-black?labelColor=black&logo=wechat&logoColor=white&style=flat-square
-[split]: https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png
+[social-wechat-shield]: https://img.shields.io/badge/WeChat-07C160?style=flat-square&logo=wechat&logoColor=white
 [social-email-link]: #
-[social-email-shield]: https://img.shields.io/badge/-Email-black?labelColor=black&logo=gmail&logoColor=white&style=flat-square
+[social-email-shield]: https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white
+[split]: https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png
