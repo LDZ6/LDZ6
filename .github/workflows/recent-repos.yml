@@ -19,7 +19,7 @@ jobs:
           script: |
             const query = `query($login:String!) {
               user(login: $login) {
-                repositories(first: 5, orderBy: {field: PUSHED_AT, direction: DESC}, ownerAffiliations: OWNER, privacy: PUBLIC) {
+                repositories(first: 100, orderBy: {field: PUSHED_AT, direction: DESC}, ownerAffiliations: OWNER, privacy: PUBLIC) {
                   nodes {
                     name
                     description
@@ -37,16 +37,14 @@ jobs:
             const result = await github.graphql(query, variables);
             const repos = result.user.repositories.nodes;
             
-            let md = "";
+            let md = "| Project | Language | Description |\n| :--- | :---: | :--- |\n";
             for (const repo of repos) {
-              const lang = repo.primaryLanguage ? `\`${repo.primaryLanguage.name}\`` : "";
-              const desc = repo.description ? repo.description : "";
-              // Format: - [**Name**](Url) - `Language` <br> Description
+              if (repo.name === 'LDZ6') continue;
+              const lang = repo.primaryLanguage ? `\`${repo.primaryLanguage.name}\`` : "—";
+              const desc = repo.description ? repo.description : "No description provided.";
               
-              let line = `- [**${repo.name}**](${repo.url})`;
-              if (lang) line += ` - ${lang}`;
-              if (desc) line += `<br> ${desc}`;
-              md += line + "\n";
+              // Format: | [**Name**](Url) | `Language` | Description |
+              md += `| [**${repo.name}**](${repo.url}) | ${lang} | ${desc} |\n`;
             }
             
             const fs = require('fs');
