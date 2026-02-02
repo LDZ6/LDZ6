@@ -1,0 +1,26 @@
+name: Update Recent Repos
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 每天运行一次
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: Readme-Workflows/recent-repos-workflow@v1.4.2
+        with:
+          # The Personal Access Token to access the GitHub API
+          # This token needs to have the `repo` scope
+          # (or `public_repo` if you only want to access public repositories)
+          #
+          # Required
+          access_token: ${{ secrets.GITHUB_TOKEN }}
+          
+          # The Username to fetch the repositories from
+          #
+          # Optional
+          # Default: The username of the owner of the repository
+          # username: <your_username>

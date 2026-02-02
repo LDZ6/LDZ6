@@ -15,10 +15,8 @@
 
 <div align="center">
 
-[![][social-bilibili-shield]][social-bilibili-link]
-[![][social-wechat-shield]][social-wechat-link]
+[![][social-xiaohongshu-shield]][social-xiaohongshu-link]
 [![][social-email-shield]][social-email-link]
-![Visitor Count](https://komarev.com/ghpvc/?username=LDZ6&style=flat-square&color=blue)
 
 </div>
 
@@ -45,11 +43,6 @@
 </div>
 -->
 
-### 🗺️ 3D Contributions
-
-<div align="center">
-  <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" />
-</div>
 
 ### 💫 Tech Stack & Tools
 
@@ -57,7 +50,7 @@
 | :----------- | :--------------- |
 | **Design** | ![][design-figma] ![][design-ps] ![][design-ai] |
 | **Frontend** | ![][frontend-vue] ![][frontend-react] ![][frontend-js] ![][frontend-css] ![][frontend-ts] |
-| **Backend** | ![][backend-python] ![][backend-nodejs] ![][backend-cpp] ![][backend-c] ![][backend-mysql] |
+| **Backend** | ![][backend-go] ![][backend-python] ![][backend-cpp] ![][backend-c] ![][backend-mysql] |
 | **AI / ML** | ![][ml-pytorch] ![][ml-r] |
 | **DevOps** | ![][ops-docker] ![][ops-nginx] ![][ops-vercel] ![][ops-github-action] |
 | **IDE** | ![][ide-cursor] ![][ide-vscode] ![][ide-vim] |
@@ -74,6 +67,11 @@
 </picture>
 
 <br/>
+
+### 📚 Recent Projects
+
+<!-- RECENT_REPOS_START -->
+<!-- RECENT_REPOS_END -->
 
 ### ⭐️ Blogs & Connections
 
@@ -113,10 +111,8 @@ You can checkout my blog [**here**](https://Lazard.ink).
 [os-macos]: https://img.shields.io/badge/-macOS-000000?style=flat-square&logo=apple&logoColor=white
 [os-linux]: https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black
 [other-markdown]: https://img.shields.io/badge/-Markdown-000000?style=flat-square&logo=markdown&logoColor=white
-[social-bilibili-link]: #
-[social-bilibili-shield]: https://img.shields.io/badge/Bilibili-FB7299?style=flat-square&logo=bilibili&logoColor=white
-[social-wechat-link]: #
-[social-wechat-shield]: https://img.shields.io/badge/WeChat-07C160?style=flat-square&logo=wechat&logoColor=white
-[social-email-link]: #
+[social-email-link]: mailto:1603139663@qq.com
 [social-email-shield]: https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white
+[social-xiaohongshu-link]: https://www.xiaohongshu.com/user/profile/68c190c9000000001a0251cd?xsec_token=ABLMxymspjGMX5YRRo5hbsgAl4L0-IljyOqR6usp04UOs%3D&xsec_source=pc_search
+[social-xiaohongshu-shield]: https://img.shields.io/badge/Xiaohongshu-FF2442?style=flat-square&logo=xiaohongshu&logoColor=white
 [split]: https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png
