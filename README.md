@@ -78,11 +78,17 @@
 
 <!-- RECENT_REPOS_START -->
 
-- [**LDZ6**](https://github.com/LDZ6/LDZ6)<br> 我的个人主页
-- [**javanote**](https://github.com/LDZ6/javanote)<br> myJavaNote
-- [**GOTCC**](https://github.com/LDZ6/GOTCC) - `Go`<br> Pure Go implementation of the Try-Confirm-Cancel pattern for distributed transaction coordination
-- [**IAM**](https://github.com/LDZ6/IAM) - `Go`<br> A production-ready, enterprise-grade Identity and Access Management system built with Go, featuring comprehensive authentication, authorization, and policy management capabilities.
-- [**gopractice_demo**](https://github.com/LDZ6/gopractice_demo) - `Go`<br> A comprehensive Go language practice repository featuring examples and best practices for popular frameworks, tools, and design patterns including Gin, gRPC, Cobra, GORM, various logging libraries, testing frameworks, and distributed systems components.
+| Project | Language | Description |
+| :--- | :---: | :--- |
+| [**javanote**](https://github.com/LDZ6/javanote) | — | myJavaNote |
+| [**GOTCC**](https://github.com/LDZ6/GOTCC) | `Go` | Pure Go implementation of the Try-Confirm-Cancel pattern for distributed transaction coordination |
+| [**IAM**](https://github.com/LDZ6/IAM) | `Go` | A production-ready, enterprise-grade Identity and Access Management system built with Go, featuring comprehensive authentication, authorization, and policy management capabilities. |
+| [**gopractice_demo**](https://github.com/LDZ6/gopractice_demo) | `Go` | A comprehensive Go language practice repository featuring examples and best practices for popular frameworks, tools, and design patterns including Gin, gRPC, Cobra, GORM, various logging libraries, testing frameworks, and distributed systems components. |
+| [**ACM_ICPC_preparation**](https://github.com/LDZ6/ACM_ICPC_preparation) | — | ACM Competition Preparation Notes |
+| [**deepLearning**](https://github.com/LDZ6/deepLearning) | `Python` | My Deep Learning Notes |
+| [**SendsPlatfrom**](https://github.com/LDZ6/SendsPlatfrom) | `Go` | A modular microservices-based backend system for a WeChat campus assistant, enabling academic queries, festive games, financial reports, and user authentication with high concurrency and secure data handling. |
+| [**MIT-6.824**](https://github.com/LDZ6/MIT-6.824) | `Go` | 麻省理工研究生课程项目：基于提供的Go语言代码框架，复刻论文细节，实现完整、容错、 分片的分布式存储系统，并通过含不可靠网络、服务器崩溃、客户端重启及RPC次数限制的全部测试样例 |
+| [**go-dev-notes**](https://github.com/LDZ6/go-dev-notes) | `HTML` | Personal Go development notes and code snippets. Covers core syntax, standard libraries, best practices, and real-world examples. |
 
 <!-- RECENT_REPOS_END -->
 
