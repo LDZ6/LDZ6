@@ -122,7 +122,7 @@
 
 ### ⭐️ Blogs & Connections
 
-You can checkout my blog [**here**](https://Lazard.ink).
+You can checkout my blog [**here**](https://www.zhihu.com/people/ldz857).
 
 > [!TIP]
 > Feel free to explore my articles and projects, and connect with me on GitHub!

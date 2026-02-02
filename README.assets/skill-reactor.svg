@@ -166,16 +166,16 @@
   <g class="reactor-text" transform="translate(680, 50)">
     <text x="0" y="0" font-size="10" fill="#0f0" opacity="0.6">SYSTEM STATUS</text>
     <rect x="-40" y="10" width="80" height="2" fill="#0f0" opacity="0.4" />
-    <text x="0" y="30" font-size="16" fill="#fff">ONLINE</text>
+    <text x="0" y="30" font-size="16" fill="#33CCFF">ONLINE</text>
     
     <g transform="translate(0, 50)">
        <text x="0" y="0" font-size="10" fill="#0f0" opacity="0.6">UPTIME</text>
-       <text x="0" y="15" font-size="12" fill="#fff">99.9%</text>
+       <text x="0" y="15" font-size="12" fill="#33CCFF">99.9%</text>
     </g>
     
      <g transform="translate(0, 100)">
        <text x="0" y="0" font-size="10" fill="#0f0" opacity="0.6">PROJECTS</text>
-       <text x="0" y="15" font-size="12" fill="#fff">30+</text>
+       <text x="0" y="15" font-size="12" fill="#33CCFF">30+</text>
     </g>
   </g>
 
