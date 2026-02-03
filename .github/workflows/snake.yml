@@ -2,15 +2,19 @@ name: Generate Snake
 
 on:
   schedule:
-    # every 6 hours
-    - cron: "0 */6 * * *"
+    # every 12 hours (reduced frequency to avoid rate limits)
+    - cron: "0 */12 * * *"
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - uses: Platane/snk@v3
         id: snake-gif
@@ -19,12 +23,14 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Change Font to Times New Roman
         run: |
           sed -i 's/sans-serif/Times New Roman, serif/g' dist/*.svg
 
-      - uses: crazy-max/ghaction-github-pages@v3.1.0
+      - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
