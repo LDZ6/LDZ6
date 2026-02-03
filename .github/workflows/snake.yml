@@ -48,9 +48,11 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Change Font to Times New Roman
+      - name: Fix Permissions and Change Font
         run: |
           if [ -d "dist" ] && [ "$(ls -A dist/*.svg 2>/dev/null)" ]; then
+            # Fix permissions for files created by Docker container
+            sudo chown -R $(whoami) dist/
             sed -i 's/sans-serif/Times New Roman, serif/g' dist/*.svg
             echo "Font changed successfully"
           else
