@@ -73,7 +73,7 @@
 <tr>
 <td><a href="https://github.com/LDZ6/javanote"><b>javanote</b></a></td>
 <td align="center">—</td>
-<td>myJavaNote</td>
+<td>My java notes.</td>
 </tr>
 <tr>
 <td><a href="https://github.com/LDZ6/GOTCC"><b>GOTCC</b></a></td>
@@ -117,7 +117,6 @@
 </tr>
 </tbody>
 </table>
-
 <!-- RECENT_REPOS_END -->
 
 ### ⭐️ Blogs & Connections
