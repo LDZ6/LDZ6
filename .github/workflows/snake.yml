@@ -12,25 +12,54 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
-      - uses: Platane/snk@v3
+      # Generate snake animation with retry logic
+      - name: Generate Snake Animation
+        uses: Platane/snk@v3
         id: snake-gif
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          github_user_name: ${{ github.repository_owner }}
+          github_user_name: LDZ6
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      # Retry if first attempt failed
+      - name: Wait and Retry if Failed
+        if: steps.snake-gif.outcome == 'failure'
+        run: |
+          echo "First attempt failed, waiting 30 seconds before retry..."
+          sleep 30
+
+      - name: Retry Generate Snake Animation
+        if: steps.snake-gif.outcome == 'failure'
+        uses: Platane/snk@v3
+        id: snake-gif-retry
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          github_user_name: LDZ6
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
       - name: Change Font to Times New Roman
         run: |
-          sed -i 's/sans-serif/Times New Roman, serif/g' dist/*.svg
+          if [ -d "dist" ] && [ "$(ls -A dist/*.svg 2>/dev/null)" ]; then
+            sed -i 's/sans-serif/Times New Roman, serif/g' dist/*.svg
+            echo "Font changed successfully"
+          else
+            echo "No SVG files found in dist directory"
+            exit 1
+          fi
 
-      - uses: crazy-max/ghaction-github-pages@v4
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
