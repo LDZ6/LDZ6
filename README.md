@@ -136,11 +136,6 @@
 <td>My Deep Learning Notes</td>
 </tr>
 <tr>
-<td><a href="https://github.com/LDZ6/SendsPlatfrom"><b>SendsPlatfrom</b></a></td>
-<td align="center">`Go`</td>
-<td>A modular microservices-based backend system for a WeChat campus assistant, enabling academic queries, festive games, financial reports, and user authentication with high concurrency and secure data handling.</td>
-</tr>
-<tr>
 <td><a href="https://github.com/LDZ6/MIT-6.824"><b>MIT-6.824</b></a></td>
 <td align="center">`Go`</td>
 <td>麻省理工研究生课程项目：基于提供的Go语言代码框架，复刻论文细节，实现完整、容错、 分片的分布式存储系统，并通过含不可靠网络、服务器崩溃、客户端重启及RPC次数限制的全部测试样例</td>
