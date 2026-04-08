@@ -81,6 +81,11 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/LDZ6/claude-code"><b>claude-code</b></a></td>
+<td align="center">`TypeScript`</td>
+<td>Claude Code Snapshot for Research. All original source code is the property of Anthropic.</td>
+</tr>
+<tr>
 <td><a href="https://github.com/LDZ6/IAM"><b>IAM</b></a></td>
 <td align="center">`Go`</td>
 <td>A production-ready, enterprise-grade Identity and Access Management system built with Go, featuring comprehensive authentication, authorization, and policy management capabilities.</td>
