@@ -150,6 +150,11 @@
 <td align="center">`HTML`</td>
 <td>Personal Go development notes and code snippets. Covers core syntax, standard libraries, best practices, and real-world examples.</td>
 </tr>
+<tr>
+<td><a href="https://github.com/LDZ6/learn.lianglianglee.com"><b>learn.lianglianglee.com</b></a></td>
+<td align="center">`HTML`</td>
+<td>No description provided.</td>
+</tr>
 </tbody>
 </table>
 <!-- RECENT_REPOS_END -->
