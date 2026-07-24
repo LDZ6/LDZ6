@@ -146,6 +146,11 @@
 <td>麻省理工研究生课程项目：基于提供的Go语言代码框架，复刻论文细节，实现完整、容错、 分片的分布式存储系统，并通过含不可靠网络、服务器崩溃、客户端重启及RPC次数限制的全部测试样例</td>
 </tr>
 <tr>
+<td><a href="https://github.com/LDZ6/Search-R1"><b>Search-R1</b></a></td>
+<td align="center">`Python`</td>
+<td>Search-R1: An Efficient, Scalable RL Training Framework for Reasoning & Search Engine Calling interleaved LLM based on veRL</td>
+</tr>
+<tr>
 <td><a href="https://github.com/LDZ6/go-dev-notes"><b>go-dev-notes</b></a></td>
 <td align="center">`HTML`</td>
 <td>Personal Go development notes and code snippets. Covers core syntax, standard libraries, best practices, and real-world examples.</td>
