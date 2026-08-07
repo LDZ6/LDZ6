@@ -81,6 +81,11 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/LDZ6/learn-harness-engineering"><b>learn-harness-engineering</b></a></td>
+<td align="center">`TypeScript`</td>
+<td>Harness engineering beginner tutorial, from 0 to 1</td>
+</tr>
+<tr>
 <td><a href="https://github.com/LDZ6/claude-code"><b>claude-code</b></a></td>
 <td align="center">`TypeScript`</td>
 <td>Claude Code Snapshot for Research. All original source code is the property of Anthropic.</td>
