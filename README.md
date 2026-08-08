@@ -81,6 +81,11 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/LDZ6/minimind"><b>minimind</b></a></td>
+<td align="center">`Python`</td>
+<td>🧠「大模型」2小时完全从0训练64M的小参数LLM！Train a 64M-parameter LLM from scratch in just 2h!</td>
+</tr>
+<tr>
 <td><a href="https://github.com/LDZ6/learn-harness-engineering"><b>learn-harness-engineering</b></a></td>
 <td align="center">`TypeScript`</td>
 <td>Harness engineering beginner tutorial, from 0 to 1</td>
