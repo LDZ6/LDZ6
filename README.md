@@ -81,6 +81,11 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/LDZ6/rlhf-book"><b>rlhf-book</b></a></td>
+<td align="center">`Python`</td>
+<td>Textbook on reinforcement learning from human feedback</td>
+</tr>
+<tr>
 <td><a href="https://github.com/LDZ6/minimind"><b>minimind</b></a></td>
 <td align="center">`Python`</td>
 <td>🧠「大模型」2小时完全从0训练64M的小参数LLM！Train a 64M-parameter LLM from scratch in just 2h!</td>
