@@ -81,6 +81,16 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/LDZ6/dsh-superagent-prototype"><b>dsh-superagent-prototype</b></a></td>
+<td align="center">`TypeScript`</td>
+<td>Towards a More Autonomous Agent System</td>
+</tr>
+<tr>
+<td><a href="https://github.com/LDZ6/deepseek-harness"><b>deepseek-harness</b></a></td>
+<td align="center">`TypeScript`</td>
+<td>DeepSeek Harness: Everything is a Plugin.</td>
+</tr>
+<tr>
 <td><a href="https://github.com/LDZ6/rlhf-book"><b>rlhf-book</b></a></td>
 <td align="center">`Python`</td>
 <td>Textbook on reinforcement learning from human feedback</td>
